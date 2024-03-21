@@ -1,0 +1,1140 @@
+/*
+
+Xilinx Vivado v2018.2 (64-bit) [Major: 2018, Minor: 2]
+SW Build: 2258646 on Thu Jun 14 20:03:12 MDT 2018
+IP Build: 2256618 on Thu Jun 14 22:10:49 MDT 2018
+
+Process ID: 20208
+License: Customer
+
+Current time: 	Tue Mar 12 10:46:25 MDT 2024
+Time zone: 	Mountain Standard Time (America/Denver)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 8
+
+Screen size: 1920x1080
+Screen resolution (DPI): 96
+Available screens: 1
+Available disk space: 726 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	1.8.0_112 64-bit
+Java home: 	C:/Xilinx/Vivado/2018.2/tps/win64/jre
+Java executable location: 	C:/Xilinx/Vivado/2018.2/tps/win64/jre/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 2 GB
+
+
+User name: 	C26Joshua.Janssen
+User home directory: C:/Users/Joshua.Janssen
+User working directory: C:/Users/Joshua.Janssen/Downloads/ece281-ice4
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2018.2
+RDI_DATADIR: C:/Xilinx/Vivado/2018.2/data
+RDI_BINDIR: C:/Xilinx/Vivado/2018.2/bin
+
+Vivado preferences file location: C:/Users/Joshua.Janssen/AppData/Roaming/Xilinx/Vivado/2018.2/vivado.xml
+Vivado preferences directory: C:/Users/Joshua.Janssen/AppData/Roaming/Xilinx/Vivado/2018.2/
+Vivado layouts directory: C:/Users/Joshua.Janssen/AppData/Roaming/Xilinx/Vivado/2018.2/layouts
+PlanAhead jar file location: 	C:/Xilinx/Vivado/2018.2/lib/classes/planAhead.jar
+Vivado log file location: 	C:/Users/Joshua.Janssen/Downloads/ece281-ice4/vivado.log
+Vivado journal file location: 	C:/Users/Joshua.Janssen/Downloads/ece281-ice4/vivado.jou
+Engine tmp dir: 	C:/Users/Joshua.Janssen/Downloads/ece281-ice4/.Xil/Vivado-20208-C26-5CG2151KQD
+
+Xilinx Environment Variables
+----------------------------
+XILINX: C:/Xilinx/Vivado/2018.2/ids_lite/ISE
+XILINX_DSP: C:/Xilinx/Vivado/2018.2/ids_lite/ISE
+XILINX_PLANAHEAD: C:/Xilinx/Vivado/2018.2
+XILINX_VIVADO: C:/Xilinx/Vivado/2018.2
+XILINX_VIVADO_HLS: C:/Xilinx/Vivado/2018.2
+
+
+GUI allocated memory:	191 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 518 MB
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// bx (ck):  Open Project : addNotify
+// Opening Vivado Project: C:\Users\Joshua.Janssen\Downloads\ece281-ice4\stoplight.xpr. Version: Vivado v2018.2 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// [GUI Memory]: 65 MB (+65166kb) [00:00:16]
+// [Engine Memory]: 495 MB (+367847kb) [00:00:16]
+// Tcl Message: open_project C:/Users/Joshua.Janssen/Downloads/ece281-ice4/stoplight.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project C:/Users/Joshua.Janssen/Downloads/ece281-ice4/stoplight.xpr 
+// Tcl Message: INFO: [Project 1-313] Project file moved from './vivado/ece281-ice4' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.2/data/ip'. 
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 77 MB (+9778kb) [00:00:20]
+// [Engine Memory]: 566 MB (+48010kb) [00:00:20]
+// [GUI Memory]: 89 MB (+8624kb) [00:00:20]
+// [GUI Memory]: 100 MB (+6152kb) [00:00:21]
+// [GUI Memory]: 109 MB (+4972kb) [00:00:21]
+// HMemoryUtils.trashcanNow. Engine heap size: 609 MB. GUI used memory: 41 MB. Current time: 3/12/24 10:46:29 AM MDT
+// Project name: stoplight; location: C:/Users/Joshua.Janssen/Downloads/ece281-ice4; part: xc7a35tcpg236-1
+// [Engine Memory]: 609 MB (+15056kb) [00:00:22]
+// Tcl Message: open_project: Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 783.711 ; gain = 54.961 
+dismissDialog("Open Project"); // bx (ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 12 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_basys3(top_basys3_arch) (top_basys3.vhd)]", 2, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, stoplight_fsm(stoplight_fsm_arch) (stoplight_fsm.vhd)]", 3, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_basys3(top_basys3_arch) (top_basys3.vhd)]", 2, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, stoplight_fsm(stoplight_fsm_arch) (stoplight_fsm.vhd)]", 3, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_basys3(top_basys3_arch) (top_basys3.vhd)]", 2, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, stoplight_fsm(stoplight_fsm_arch) (stoplight_fsm.vhd)]", 3, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_basys3(top_basys3_arch) (top_basys3.vhd)]", 2, true); // B (D, ck) - Node
+// Elapsed time: 13 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 4, true); // B (D, ck) - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 5); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1]", 6, true); // B (D, ck) - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1]", 6); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, clock_divider_tb(test_bench) (clock_divider_tb.vhd)]", 8, true, false, false, false, true, false); // B (D, ck) - Popup Trigger - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, clock_divider_tb(test_bench) (clock_divider_tb.vhd)]", 8, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, clock_divider_tb(test_bench) (clock_divider_tb.vhd)]", 8, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, clock_divider_tb(test_bench) (clock_divider_tb.vhd)]", 8, true, false, false, false, false, true); // B (D, ck) - Double Click - Node
+// HMemoryUtils.trashcanNow. Engine heap size: 628 MB. GUI used memory: 43 MB. Current time: 3/12/24 10:50:18 AM MDT
+// Elapsed time: 1009 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, clock_divider_tb(test_bench) (clock_divider_tb.vhd), uut_inst : clock_divider(countCompare) (clock_divider.vhd)]", 9, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, clock_divider_tb(test_bench) (clock_divider_tb.vhd), uut_inst : clock_divider(countCompare) (clock_divider.vhd)]", 9, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, clock_divider_tb(test_bench) (clock_divider_tb.vhd), uut_inst : clock_divider(countCompare) (clock_divider.vhd)]", 9, false, false, false, false, false, true); // B (D, ck) - Double Click
+selectCodeEditor("clock_divider.vhd", 363, 242); // ce (w, ck)
+selectCodeEditor("clock_divider.vhd", 354, 213); // ce (w, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, stoplight_fsm_tb(behavior) (stoplight_fsm_tb.vhd)]", 10, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, stoplight_fsm_tb(behavior) (stoplight_fsm_tb.vhd)]", 10, true, false, false, false, false, true); // B (D, ck) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, stoplight_fsm(stoplight_fsm_arch) (stoplight_fsm.vhd)]", 3, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, stoplight_fsm(stoplight_fsm_arch) (stoplight_fsm.vhd)]", 3, false, false, false, false, false, true); // B (D, ck) - Double Click
+selectCodeEditor("stoplight_fsm.vhd", 212, 204); // ce (w, ck)
+selectCodeEditor("stoplight_fsm.vhd", 189, 196); // ce (w, ck)
+// Elapsed time: 19 seconds
+selectCodeEditor("stoplight_fsm.vhd", 100, 233); // ce (w, ck)
+selectCodeEditor("stoplight_fsm.vhd", 48, 202); // ce (w, ck)
+selectCodeEditor("stoplight_fsm.vhd", 72, 215); // ce (w, ck)
+selectCodeEditor("stoplight_fsm.vhd", 98, 196); // ce (w, ck)
+selectCodeEditor("stoplight_fsm.vhd", 66, 228); // ce (w, ck)
+// Elapsed time: 78 seconds
+selectCodeEditor("stoplight_fsm.vhd", 331, 185); // ce (w, ck)
+// Elapsed time: 13 seconds
+selectCodeEditor("stoplight_fsm.vhd", 206, 178); // ce (w, ck)
+selectCodeEditor("stoplight_fsm.vhd", 206, 178, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("stoplight_fsm.vhd", 206, 178); // ce (w, ck)
+typeControlKey((HResource) null, "stoplight_fsm.vhd", 'c'); // ce (w, ck)
+selectCodeEditor("stoplight_fsm.vhd", 138, 198); // ce (w, ck)
+typeControlKey((HResource) null, "stoplight_fsm.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("stoplight_fsm.vhd", 51, 198); // ce (w, ck)
+selectCodeEditor("stoplight_fsm.vhd", 98, 199); // ce (w, ck)
+selectCodeEditor("stoplight_fsm.vhd", 445, 206); // ce (w, ck)
+// Elapsed time: 138 seconds
+selectCodeEditor("stoplight_fsm.vhd", 117, 402); // ce (w, ck)
+selectCodeEditor("stoplight_fsm.vhd", 151, 373); // ce (w, ck)
+selectCodeEditor("stoplight_fsm.vhd", 131, 351); // ce (w, ck)
+selectCodeEditor("stoplight_fsm.vhd", 114, 334); // ce (w, ck)
+selectCodeEditor("stoplight_fsm.vhd", 157, 353); // ce (w, ck)
+selectCodeEditor("stoplight_fsm.vhd", 157, 337); // ce (w, ck)
+// Elapsed time: 23 seconds
+selectCodeEditor("stoplight_fsm.vhd", 43, 354); // ce (w, ck)
+selectCodeEditor("stoplight_fsm.vhd", 26, 350); // ce (w, ck)
+typeControlKey((HResource) null, "stoplight_fsm.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("stoplight_fsm.vhd", 60, 283); // ce (w, ck)
+selectCodeEditor("stoplight_fsm.vhd", 60, 283, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("stoplight_fsm.vhd", 203, 231); // ce (w, ck)
+// Elapsed time: 11 seconds
+selectCodeEditor("stoplight_fsm.vhd", 304, 234); // ce (w, ck)
+selectCodeEditor("stoplight_fsm.vhd", 139, 350); // ce (w, ck)
+selectCodeEditor("stoplight_fsm.vhd", 222, 335); // ce (w, ck)
+selectCodeEditor("stoplight_fsm.vhd", 226, 301); // ce (w, ck)
+selectCodeEditor("stoplight_fsm.vhd", 271, 351); // ce (w, ck)
+selectCodeEditor("stoplight_fsm.vhd", 378, 370); // ce (w, ck)
+selectCodeEditor("stoplight_fsm.vhd", 292, 349); // ce (w, ck)
+selectCodeEditor("stoplight_fsm.vhd", 292, 349); // ce (w, ck)
+selectCodeEditor("stoplight_fsm.vhd", 305, 364); // ce (w, ck)
+// Elapsed time: 29 seconds
+selectCodeEditor("stoplight_fsm.vhd", 89, 384); // ce (w, ck)
+// Elapsed time: 14 seconds
+selectCodeEditor("stoplight_fsm.vhd", 98, 390); // ce (w, ck)
+selectCodeEditor("stoplight_fsm.vhd", 74, 390); // ce (w, ck)
+selectCodeEditor("stoplight_fsm.vhd", 58, 399); // ce (w, ck)
+// HMemoryUtils.trashcanNow. Engine heap size: 633 MB. GUI used memory: 45 MB. Current time: 3/12/24 11:20:19 AM MDT
+// HMemoryUtils.trashcanNow. Engine heap size: 633 MB. GUI used memory: 39 MB. Current time: 3/12/24 3:03:29 PM MDT
+// [GUI Memory]: 117 MB (+1984kb) [04:25:47]
+// [GUI Memory]: 124 MB (+1968kb) [04:27:47]
+// [GUI Memory]: 131 MB (+105kb) [04:29:42]
+// [GUI Memory]: 138 MB (+248kb) [04:31:38]
+// [GUI Memory]: 146 MB (+1263kb) [04:35:13]
+// [GUI Memory]: 153 MB (+351kb) [04:37:08]
+// [GUI Memory]: 162 MB (+962kb) [04:39:08]
+// [GUI Memory]: 171 MB (+1463kb) [04:41:08]
+// [GUI Memory]: 181 MB (+818kb) [04:42:52]
+// Elapsed time: 15703 seconds
+selectCodeEditor("stoplight_fsm.vhd", 406, 403); // ce (w, ck)
+// HMemoryUtils.trashcanNow. Engine heap size: 633 MB. GUI used memory: 50 MB. Current time: 3/12/24 3:33:24 PM MDT
+// HMemoryUtils.trashcanNow. Engine heap size: 633 MB. GUI used memory: 50 MB. Current time: 3/12/24 4:03:24 PM MDT
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking 741228 ms to process. Increasing delay to 2000 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 633 MB. GUI used memory: 39 MB. Current time: 3/12/24 4:33:26 PM MDT
+// Elapsed time: 3731 seconds
+selectCodeEditor("stoplight_fsm.vhd", 96, 190); // ce (w, ck)
+selectCodeEditor("stoplight_fsm.vhd", 65, 141); // ce (w, ck)
+// Elapsed time: 252 seconds
+selectCodeEditor("stoplight_fsm.vhd", 58, 152); // ce (w, ck)
+// Elapsed time: 13 seconds
+typeControlKey((HResource) null, "stoplight_fsm.vhd", 'v'); // ce (w, ck)
+// Elapsed time: 16 seconds
+selectCodeEditor("stoplight_fsm.vhd", 150, 159); // ce (w, ck)
+// Elapsed time: 24 seconds
+selectCodeEditor("stoplight_fsm.vhd", 135, 165); // ce (w, ck)
+selectCodeEditor("stoplight_fsm.vhd", 213, 160); // ce (w, ck)
+selectCodeEditor("stoplight_fsm.vhd", 227, 167); // ce (w, ck)
+selectCodeEditor("stoplight_fsm.vhd", 130, 163); // ce (w, ck)
+selectCodeEditor("stoplight_fsm.vhd", 233, 160); // ce (w, ck)
+// Elapsed time: 10 seconds
+selectCodeEditor("stoplight_fsm.vhd", 169, 166); // ce (w, ck)
+selectCodeEditor("stoplight_fsm.vhd", 161, 163); // ce (w, ck)
+selectCodeEditor("stoplight_fsm.vhd", 169, 167); // ce (w, ck)
+selectCodeEditor("stoplight_fsm.vhd", 174, 167); // ce (w, ck)
+selectCodeEditor("stoplight_fsm.vhd", 139, 165); // ce (w, ck)
+selectCodeEditor("stoplight_fsm.vhd", 227, 163); // ce (w, ck)
+// Elapsed time: 15 seconds
+selectCodeEditor("stoplight_fsm.vhd", 246, 162); // ce (w, ck)
+selectCodeEditor("stoplight_fsm.vhd", 277, 163); // ce (w, ck)
+selectCodeEditor("stoplight_fsm.vhd", 250, 166); // ce (w, ck)
+selectCodeEditor("stoplight_fsm.vhd", 346, 163); // ce (w, ck)
+selectCodeEditor("stoplight_fsm.vhd", 252, 166); // ce (w, ck)
+selectCodeEditor("stoplight_fsm.vhd", 327, 161); // ce (w, ck)
+// Elapsed time: 44 seconds
+selectCodeEditor("stoplight_fsm.vhd", 140, 366); // ce (w, ck)
+selectCodeEditor("stoplight_fsm.vhd", 368, 359); // ce (w, ck)
+selectCodeEditor("stoplight_fsm.vhd", 379, 371); // ce (w, ck)
+typeControlKey((HResource) null, "stoplight_fsm.vhd", 'c'); // ce (w, ck)
+selectCodeEditor("stoplight_fsm.vhd", 298, 373); // ce (w, ck)
+selectCodeEditor("stoplight_fsm.vhd", 420, 372); // ce (w, ck)
+selectCodeEditor("stoplight_fsm.vhd", 442, 364); // ce (w, ck)
+typeControlKey((HResource) null, "stoplight_fsm.vhd", 'v'); // ce (w, ck)
+// Elapsed time: 11 seconds
+selectCodeEditor("stoplight_fsm.vhd", 410, 264); // ce (w, ck)
+selectCodeEditor("stoplight_fsm.vhd", 346, 279); // ce (w, ck)
+// Elapsed time: 17 seconds
+selectCodeEditor("stoplight_fsm.vhd", 116, 288); // ce (w, ck)
+selectCodeEditor("stoplight_fsm.vhd", 146, 282); // ce (w, ck)
+// Elapsed time: 11 seconds
+selectCodeEditor("stoplight_fsm.vhd", 175, 252); // ce (w, ck)
+// Elapsed time: 12 seconds
+selectCodeEditor("stoplight_fsm.vhd", 188, 302); // ce (w, ck)
+// Elapsed time: 14 seconds
+typeControlKey((HResource) null, "stoplight_fsm.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("stoplight_fsm.vhd", 71, 318); // ce (w, ck)
+// Elapsed time: 17 seconds
+selectCodeEditor("stoplight_fsm.vhd", 73, 313); // ce (w, ck)
+selectCodeEditor("stoplight_fsm.vhd", 74, 316); // ce (w, ck)
+selectCodeEditor("stoplight_fsm.vhd", 254, 316); // ce (w, ck)
+selectCodeEditor("stoplight_fsm.vhd", 116, 149); // ce (w, ck)
+selectCodeEditor("stoplight_fsm.vhd", 116, 149, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("stoplight_fsm.vhd", 116, 149); // ce (w, ck)
+selectCodeEditor("stoplight_fsm.vhd", 116, 149, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("stoplight_fsm.vhd", 116, 149); // ce (w, ck)
+selectCodeEditor("stoplight_fsm.vhd", 30, 179); // ce (w, ck)
+selectCodeEditor("stoplight_fsm.vhd", 30, 198); // ce (w, ck)
+selectCodeEditor("stoplight_fsm.vhd", 155, 208); // ce (w, ck)
+selectCodeEditor("stoplight_fsm.vhd", 340, 207); // ce (w, ck)
+// Elapsed time: 164 seconds
+selectCodeEditor("stoplight_fsm.vhd", 169, 220); // ce (w, ck)
+selectCodeEditor("stoplight_fsm.vhd", 23, 215); // ce (w, ck)
+selectCodeEditor("stoplight_fsm.vhd", 231, 253, false, false, false, true, false); // ce (w, ck) - Popup Trigger
+selectCodeEditor("stoplight_fsm.vhd", 27, 258); // ce (w, ck)
+selectCodeEditor("stoplight_fsm.vhd", 4, 212); // ce (w, ck)
+typeControlKey((HResource) null, "stoplight_fsm.vhd", 'c'); // ce (w, ck)
+selectCodeEditor("stoplight_fsm.vhd", 282, 243); // ce (w, ck)
+selectCodeEditor("stoplight_fsm.vhd", 282, 243, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("stoplight_fsm.vhd", 282, 243); // ce (w, ck)
+// Elapsed time: 10 seconds
+typeControlKey((HResource) null, "stoplight_fsm.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("stoplight_fsm.vhd", 52, 265); // ce (w, ck)
+selectCodeEditor("stoplight_fsm.vhd", 129, 283); // ce (w, ck)
+selectCodeEditor("stoplight_fsm.vhd", 130, 299); // ce (w, ck)
+selectCodeEditor("stoplight_fsm.vhd", 174, 321); // ce (w, ck)
+// Elapsed time: 32 seconds
+selectCodeEditor("stoplight_fsm.vhd", 76, 197); // ce (w, ck)
+typeControlKey((HResource) null, "stoplight_fsm.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("stoplight_fsm.vhd", 62, 315); // ce (w, ck)
+selectCodeEditor("stoplight_fsm.vhd", 94, 268); // ce (w, ck)
+selectCodeEditor("stoplight_fsm.vhd", 277, 266); // ce (w, ck)
+// Elapsed time: 14 seconds
+selectCodeEditor("stoplight_fsm.vhd", 390, 265); // ce (w, ck)
+selectCodeEditor("stoplight_fsm.vhd", 322, 309); // ce (w, ck)
+selectCodeEditor("stoplight_fsm.vhd", 291, 268); // ce (w, ck)
+selectCodeEditor("stoplight_fsm.vhd", 226, 295); // ce (w, ck)
+selectCodeEditor("stoplight_fsm.vhd", 58, 199); // ce (w, ck)
+selectCodeEditor("stoplight_fsm.vhd", 58, 199, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("stoplight_fsm.vhd", 58, 199); // ce (w, ck)
+// HMemoryUtils.trashcanNow. Engine heap size: 633 MB. GUI used memory: 39 MB. Current time: 3/12/24 5:03:27 PM MDT
+// Elapsed time: 866 seconds
+selectCodeEditor("stoplight_fsm.vhd", 222, 196); // ce (w, ck)
+selectCodeEditor("stoplight_fsm.vhd", 286, 198); // ce (w, ck)
+// Elapsed time: 42 seconds
+selectCodeEditor("stoplight_fsm.vhd", 217, 240); // ce (w, ck)
+// Elapsed time: 145 seconds
+selectCodeEditor("stoplight_fsm.vhd", 53, 162); // ce (w, ck)
+// Elapsed time: 39 seconds
+selectCodeEditor("stoplight_fsm.vhd", 124, 161); // ce (w, ck)
+selectCodeEditor("stoplight_fsm.vhd", 76, 164); // ce (w, ck)
+// Elapsed time: 17 seconds
+selectCodeEditor("stoplight_fsm.vhd", 223, 167); // ce (w, ck)
+selectCodeEditor("stoplight_fsm.vhd", 252, 166); // ce (w, ck)
+selectCodeEditor("stoplight_fsm.vhd", 103, 163); // ce (w, ck)
+selectCodeEditor("stoplight_fsm.vhd", 33, 166); // ce (w, ck)
+selectCodeEditor("stoplight_fsm.vhd", 256, 160); // ce (w, ck)
+selectCodeEditor("stoplight_fsm.vhd", 71, 165); // ce (w, ck)
+selectCodeEditor("stoplight_fsm.vhd", 71, 165, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("stoplight_fsm.vhd", 71, 165); // ce (w, ck)
+typeControlKey((HResource) null, "stoplight_fsm.vhd", 'c'); // ce (w, ck)
+selectCodeEditor("stoplight_fsm.vhd", 49, 185); // ce (w, ck)
+typeControlKey((HResource) null, "stoplight_fsm.vhd", 'v'); // ce (w, ck)
+typeControlKey((HResource) null, "stoplight_fsm.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("stoplight_fsm.vhd", 48, 180); // ce (w, ck)
+selectCodeEditor("stoplight_fsm.vhd", 47, 200); // ce (w, ck)
+selectCodeEditor("stoplight_fsm.vhd", 144, 181); // ce (w, ck)
+selectCodeEditor("stoplight_fsm.vhd", 227, 182); // ce (w, ck)
+selectCodeEditor("stoplight_fsm.vhd", 255, 202); // ce (w, ck)
+selectCodeEditor("stoplight_fsm.vhd", 232, 199); // ce (w, ck)
+selectCodeEditor("stoplight_fsm.vhd", 235, 187); // ce (w, ck)
+selectCodeEditor("stoplight_fsm.vhd", 194, 192); // ce (w, ck)
+// Elapsed time: 18 seconds
+selectCodeEditor("stoplight_fsm.vhd", 111, 198); // ce (w, ck)
+typeControlKey((HResource) null, "stoplight_fsm.vhd", 'c'); // ce (w, ck)
+selectCodeEditor("stoplight_fsm.vhd", 83, 216); // ce (w, ck)
+typeControlKey((HResource) null, "stoplight_fsm.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("stoplight_fsm.vhd", 202, 216); // ce (w, ck)
+selectCodeEditor("stoplight_fsm.vhd", 79, 219); // ce (w, ck)
+// Elapsed time: 10 seconds
+selectCodeEditor("stoplight_fsm.vhd", 276, 197); // ce (w, ck)
+selectCodeEditor("stoplight_fsm.vhd", 278, 196); // ce (w, ck)
+selectCodeEditor("stoplight_fsm.vhd", 78, 199); // ce (w, ck)
+selectCodeEditor("stoplight_fsm.vhd", 77, 218); // ce (w, ck)
+selectCodeEditor("stoplight_fsm.vhd", 455, 197); // ce (w, ck)
+selectCodeEditor("stoplight_fsm.vhd", 457, 259); // ce (w, ck)
+// Elapsed time: 21 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, clock_divider_tb(test_bench) (clock_divider_tb.vhd)]", 8, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, stoplight_fsm_tb(behavior) (stoplight_fsm_tb.vhd)]", 10, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, stoplight_fsm_tb(behavior) (stoplight_fsm_tb.vhd)]", 10, true, false, false, false, true, false); // B (D, ck) - Popup Trigger - Node
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // aa (aj, ck)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // aa (aj, ck)
+selectMenuItem(PAResourceCommand.PACommandNames_SET_AS_TOP, "Set as Top"); // ad (aj, ck)
+// Run Command: PAResourceCommand.PACommandNames_SET_AS_TOP
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: set_property top stoplight_fsm_tb [get_filesets sim_1] 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: set_property top_lib xil_defaultlib [get_filesets sim_1] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sim_1 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, stoplight_fsm_tb(behavior) (stoplight_fsm_tb.vhd)]", 8, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, stoplight_fsm_tb(behavior) (stoplight_fsm_tb.vhd)]", 8, true, false, false, false, false, true); // B (D, ck) - Double Click - Node
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 59 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // u (O, ck)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ad (aj, ck)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// aj (ck): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a (aj)
+// bx (ck):  Save Constraints : addNotify
+// TclEventType: DG_GRAPH_STALE
+// e (ck):  Run Simulation : addNotify
+dismissDialog("Save Project"); // aj (ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: LAUNCH_SIM
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// Tcl Message: launch_simulation 
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// Tcl Message: INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Joshua.Janssen/Downloads/ece281-ice4/stoplight.sim/sim_1/behav/xsim' INFO: [SIM-utils-51] Simulation object is 'sim_1' 
+// TclEventType: DG_GRAPH_GENERATED
+// Tcl Message: INFO: [SIM-utils-54] Inspecting design source files for 'stoplight_fsm_tb' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design 
+// Tcl Message: INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Joshua.Janssen/Downloads/ece281-ice4/stoplight.sim/sim_1/behav/xsim' 
+// Tcl Message: "xvhdl --incr --relax -prj stoplight_fsm_tb_vhdl.prj" 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Joshua.Janssen/Downloads/ece281-ice4/src/hdl/stoplight_fsm.vhd" into library xil_defaultlib INFO: [VRFC 10-307] analyzing entity stoplight_fsm INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Joshua.Janssen/Downloads/ece281-ice4/src/hdl/stoplight_fsm_tb.vhd" into library xil_defaultlib INFO: [VRFC 10-307] analyzing entity stoplight_fsm_tb 
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '3' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Joshua.Janssen/Downloads/ece281-ice4/stoplight.sim/sim_1/behav/xsim' 
+// Tcl Message: Built simulation snapshot stoplight_fsm_tb_behav 
+// TclEventType: LAUNCH_SIM
+// TclEventType: LOAD_FEATURE
+// Tcl Message:  ****** Webtalk v2018.2 (64-bit)   **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018   **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018     ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.  source C:/Users/Joshua.Janssen/Downloads/ece281-ice4/stoplight.sim/sim_1/behav/xsim/xsim.dir/stoplight_fsm_tb_behav/webtalk/xsim_webtalk.tcl -notrace INFO: [Common 17-206] Exiting Webtalk at Tue Mar 12 17:11:37 2024... 
+// Tcl Message: run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 919.723 ; gain = 0.000 
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '8' seconds INFO: [USF-XSim-4] XSim::Simulate design INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Joshua.Janssen/Downloads/ece281-ice4/stoplight.sim/sim_1/behav/xsim' INFO: [USF-XSim-98] *** Running xsim 
+// Tcl Message:    with args "stoplight_fsm_tb_behav -key {Behavioral:sim_1:Functional:stoplight_fsm_tb} -tclbatch {stoplight_fsm_tb.tcl} -log {simulate.log}" 
+// Tcl Message: INFO: [USF-XSim-8] Loading simulator feature 
+// Tcl Message: Vivado Simulator 2018.2 
+// TclEventType: SIMULATION_CREATE_SIMULATION_OBJECT
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// Tcl Message: Time resolution is 1 ps 
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// Waveform: addNotify
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// HMemoryUtils.trashcanNow. Engine heap size: 633 MB. GUI used memory: 86 MB. Current time: 3/12/24 5:11:48 PM MDT
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_OBJECT_TREE_RESTORED
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_CURRENT_STACK_CHANGED
+// TclEventType: SIMULATION_UPDATE_STACK_FRAMES
+// TclEventType: SIMULATION_CURRENT_STACK_FRAME_CHANGED
+// TclEventType: SIMULATION_UPDATE_LOCALS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: source stoplight_fsm_tb.tcl 
+// Tcl Message: # set curr_wave [current_wave_config] # if { [string length $curr_wave] == 0 } { #   if { [llength [get_objects]] > 0} { #     add_wave / #     set_property needs_save false [current_wave_config] #   } else { #      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console." #   } # } # run 1000ns 
+// Tcl Message: xsim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:11 . Memory (MB): peak = 931.133 ; gain = 11.410 
+// Tcl Message: INFO: [USF-XSim-96] XSim completed. Design snapshot 'stoplight_fsm_tb_behav' loaded. INFO: [USF-XSim-97] XSim simulation ran for 1000ns 
+// Tcl Message: launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:25 . Memory (MB): peak = 931.133 ; gain = 11.410 
+// 'd' command handler elapsed time: 26 seconds
+// Elapsed time: 25 seconds
+dismissDialog("Run Simulation"); // e (ck)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 633 MB. GUI used memory: 55 MB. Current time: 3/12/24 5:12:03 PM MDT
+// Elapsed time: 17 seconds
+selectButton(RDIResource.WaveformView_ADD_MARKER, "Waveform Viewer_waveformAddMarker"); // B (f, ck)
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_TITLE
+selectButton(RDIResource.WaveformView_ADD_MARKER, "Waveform Viewer_waveformAddMarker"); // B (f, ck)
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_TITLE
+selectButton(RDIResource.WaveformView_GOTO_TIME_0, "Waveform Viewer_RunReset"); // B (f, ck)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 633 MB. GUI used memory: 51 MB. Current time: 3/12/24 5:12:08 PM MDT
+selectButton(RDIResource.WaveformView_GOTO_TIME_0, "Waveform Viewer_RunReset"); // B (f, ck)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectButton(RDIResource.WaveformView_GOTO_TIME_0, "Waveform Viewer_RunReset"); // B (f, ck)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectButton(RDIResource.WaveformView_GOTO_TIME_0, "Waveform Viewer_RunReset"); // B (f, ck)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectButton(RDIResource.WaveformView_GOTO_TIME_0, "Waveform Viewer_RunReset"); // B (f, ck)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectButton(RDIResource.WaveformView_GOTO_TIME_0, "Waveform Viewer_RunReset"); // B (f, ck)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectButton(RDIResource.WaveformView_GOTO_TIME_0, "Waveform Viewer_RunReset"); // B (f, ck)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectButton(RDIResource.WaveformView_GOTO_LAST_TIME, "Waveform Viewer_RunAll"); // B (f, ck)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectButton(RDIResource.WaveformView_GOTO_TIME_0, "Waveform Viewer_RunReset"); // B (f, ck)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectButton(RDIResource.GraphicalView_ZOOM_OUT, "Waveform Viewer_zoom_out"); // B (f, ck)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 633 MB. GUI used memory: 50 MB. Current time: 3/12/24 5:12:15 PM MDT
+selectButton(RDIResource.GraphicalView_ZOOM_OUT, "Waveform Viewer_zoom_out"); // B (f, ck)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectButton(RDIResource.GraphicalView_ZOOM_OUT, "Waveform Viewer_zoom_out"); // B (f, ck)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectButton(RDIResource.GraphicalView_ZOOM_OUT, "Waveform Viewer_zoom_out"); // B (f, ck)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 633 MB. GUI used memory: 50 MB. Current time: 3/12/24 5:12:16 PM MDT
+selectButton(RDIResource.GraphicalView_ZOOM_OUT, "Waveform Viewer_zoom_out"); // B (f, ck)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectButton(RDIResource.GraphicalView_ZOOM_OUT, "Waveform Viewer_zoom_out"); // B (f, ck)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectButton(RDIResource.GraphicalView_ZOOM_OUT, "Waveform Viewer_zoom_out"); // B (f, ck)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 633 MB. GUI used memory: 50 MB. Current time: 3/12/24 5:12:17 PM MDT
+selectButton(RDIResource.GraphicalView_ZOOM_OUT, "Waveform Viewer_zoom_out"); // B (f, ck)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectButton(RDIResource.GraphicalView_ZOOM_OUT, "Waveform Viewer_zoom_out"); // B (f, ck)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectButton(RDIResource.GraphicalView_ZOOM_OUT, "Waveform Viewer_zoom_out"); // B (f, ck)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 633 MB. GUI used memory: 50 MB. Current time: 3/12/24 5:12:18 PM MDT
+selectButton(RDIResource.GraphicalView_ZOOM_OUT, "Waveform Viewer_zoom_out"); // B (f, ck)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectButton(RDIResource.GraphicalView_ZOOM_OUT, "Waveform Viewer_zoom_out"); // B (f, ck)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectButton(RDIResource.GraphicalView_ZOOM_OUT, "Waveform Viewer_zoom_out"); // B (f, ck)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 633 MB. GUI used memory: 50 MB. Current time: 3/12/24 5:12:19 PM MDT
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 633 MB. GUI used memory: 49 MB. Current time: 3/12/24 5:12:43 PM MDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// HMemoryUtils.trashcanNow. Engine heap size: 633 MB. GUI used memory: 49 MB. Current time: 3/12/24 5:12:45 PM MDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 633 MB. GUI used memory: 49 MB. Current time: 3/12/24 5:13:01 PM MDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Elapsed time: 43 seconds
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, k_clk_period]", 4, false); // a (s, ck)
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, w_stoplight[2:0]]", 3, true); // a (s, ck) - Node
+// HMemoryUtils.trashcanNow. Engine heap size: 633 MB. GUI used memory: 49 MB. Current time: 3/12/24 5:13:04 PM MDT
+expandTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, w_stoplight[2:0]]", 3); // a (s, ck)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 633 MB. GUI used memory: 50 MB. Current time: 3/12/24 5:13:07 PM MDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 167, 104); // n (o, ck)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 126, 105, false, false, false, true, false); // n (o, ck) - Popup Trigger
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectMenu((HResource) null, "Signal Color"); // aa (aj, ck)
+selectMenu((HResource) null, "Signal Color"); // aa (aj, ck)
+selectMenuItem((HResource) null, "Red"); // R (ck, Popup.HeavyWeightWindow)
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// HMemoryUtils.trashcanNow. Engine heap size: 633 MB. GUI used memory: 50 MB. Current time: 3/12/24 5:13:16 PM MDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 70, 139); // n (o, ck)
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 49, 147, false, false, false, true, false); // n (o, ck) - Popup Trigger
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectMenu((HResource) null, "Signal Color"); // aa (aj, ck)
+selectMenu((HResource) null, "Signal Color"); // aa (aj, ck)
+selectMenuItem((HResource) null, "Yellow"); // R (ck, Popup.HeavyWeightWindow)
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 244, 273); // n (o, ck)
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 633 MB. GUI used memory: 51 MB. Current time: 3/12/24 5:13:27 PM MDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 633 MB. GUI used memory: 49 MB. Current time: 3/12/24 5:13:37 PM MDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 633 MB. GUI used memory: 49 MB. Current time: 3/12/24 5:13:37 PM MDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 633 MB. GUI used memory: 49 MB. Current time: 3/12/24 5:13:37 PM MDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 633 MB. GUI used memory: 49 MB. Current time: 3/12/24 5:13:37 PM MDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 633 MB. GUI used memory: 49 MB. Current time: 3/12/24 5:13:37 PM MDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 633 MB. GUI used memory: 49 MB. Current time: 3/12/24 5:13:38 PM MDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 633 MB. GUI used memory: 49 MB. Current time: 3/12/24 5:13:38 PM MDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 633 MB. GUI used memory: 49 MB. Current time: 3/12/24 5:13:38 PM MDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 633 MB. GUI used memory: 49 MB. Current time: 3/12/24 5:13:38 PM MDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 633 MB. GUI used memory: 49 MB. Current time: 3/12/24 5:13:40 PM MDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 633 MB. GUI used memory: 49 MB. Current time: 3/12/24 5:13:40 PM MDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 633 MB. GUI used memory: 49 MB. Current time: 3/12/24 5:13:40 PM MDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 633 MB. GUI used memory: 49 MB. Current time: 3/12/24 5:13:40 PM MDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 633 MB. GUI used memory: 49 MB. Current time: 3/12/24 5:13:40 PM MDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 633 MB. GUI used memory: 49 MB. Current time: 3/12/24 5:13:40 PM MDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 633 MB. GUI used memory: 49 MB. Current time: 3/12/24 5:13:41 PM MDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 633 MB. GUI used memory: 49 MB. Current time: 3/12/24 5:13:41 PM MDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 633 MB. GUI used memory: 49 MB. Current time: 3/12/24 5:13:41 PM MDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 633 MB. GUI used memory: 50 MB. Current time: 3/12/24 5:13:41 PM MDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 633 MB. GUI used memory: 49 MB. Current time: 3/12/24 5:13:41 PM MDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 633 MB. GUI used memory: 49 MB. Current time: 3/12/24 5:13:41 PM MDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 633 MB. GUI used memory: 49 MB. Current time: 3/12/24 5:13:41 PM MDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 633 MB. GUI used memory: 49 MB. Current time: 3/12/24 5:13:41 PM MDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 633 MB. GUI used memory: 49 MB. Current time: 3/12/24 5:13:41 PM MDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 633 MB. GUI used memory: 49 MB. Current time: 3/12/24 5:13:41 PM MDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 633 MB. GUI used memory: 49 MB. Current time: 3/12/24 5:13:41 PM MDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 633 MB. GUI used memory: 49 MB. Current time: 3/12/24 5:13:41 PM MDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 633 MB. GUI used memory: 50 MB. Current time: 3/12/24 5:13:41 PM MDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 633 MB. GUI used memory: 49 MB. Current time: 3/12/24 5:13:42 PM MDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 633 MB. GUI used memory: 49 MB. Current time: 3/12/24 5:13:42 PM MDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 633 MB. GUI used memory: 49 MB. Current time: 3/12/24 5:13:42 PM MDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 633 MB. GUI used memory: 49 MB. Current time: 3/12/24 5:13:42 PM MDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 633 MB. GUI used memory: 51 MB. Current time: 3/12/24 5:13:42 PM MDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 633 MB. GUI used memory: 49 MB. Current time: 3/12/24 5:13:42 PM MDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 633 MB. GUI used memory: 49 MB. Current time: 3/12/24 5:13:42 PM MDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 633 MB. GUI used memory: 49 MB. Current time: 3/12/24 5:13:42 PM MDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 633 MB. GUI used memory: 49 MB. Current time: 3/12/24 5:13:42 PM MDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 633 MB. GUI used memory: 50 MB. Current time: 3/12/24 5:13:42 PM MDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 633 MB. GUI used memory: 49 MB. Current time: 3/12/24 5:13:42 PM MDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 633 MB. GUI used memory: 49 MB. Current time: 3/12/24 5:13:43 PM MDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 633 MB. GUI used memory: 49 MB. Current time: 3/12/24 5:13:43 PM MDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 633 MB. GUI used memory: 51 MB. Current time: 3/12/24 5:13:43 PM MDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 633 MB. GUI used memory: 49 MB. Current time: 3/12/24 5:13:43 PM MDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 633 MB. GUI used memory: 51 MB. Current time: 3/12/24 5:13:43 PM MDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 633 MB. GUI used memory: 49 MB. Current time: 3/12/24 5:13:43 PM MDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 633 MB. GUI used memory: 49 MB. Current time: 3/12/24 5:13:43 PM MDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 633 MB. GUI used memory: 49 MB. Current time: 3/12/24 5:13:43 PM MDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 633 MB. GUI used memory: 49 MB. Current time: 3/12/24 5:13:43 PM MDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 633 MB. GUI used memory: 49 MB. Current time: 3/12/24 5:13:43 PM MDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 633 MB. GUI used memory: 52 MB. Current time: 3/12/24 5:13:43 PM MDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 633 MB. GUI used memory: 51 MB. Current time: 3/12/24 5:13:43 PM MDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 633 MB. GUI used memory: 51 MB. Current time: 3/12/24 5:13:44 PM MDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 633 MB. GUI used memory: 49 MB. Current time: 3/12/24 5:13:44 PM MDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 633 MB. GUI used memory: 49 MB. Current time: 3/12/24 5:13:46 PM MDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 633 MB. GUI used memory: 49 MB. Current time: 3/12/24 5:13:46 PM MDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 633 MB. GUI used memory: 49 MB. Current time: 3/12/24 5:13:46 PM MDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 633 MB. GUI used memory: 49 MB. Current time: 3/12/24 5:13:48 PM MDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 633 MB. GUI used memory: 49 MB. Current time: 3/12/24 5:13:48 PM MDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 633 MB. GUI used memory: 50 MB. Current time: 3/12/24 5:14:08 PM MDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 633 MB. GUI used memory: 52 MB. Current time: 3/12/24 5:14:10 PM MDT
+// PAResourceOtoP.PAViews_OBJECTS: Objects: close view
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Elapsed time: 47 seconds
+closeFrame(PAResourceOtoP.PAViews_SCOPE, "Scopes"); // aw (aE, ck)
+maximizeFrame(PAResourceOtoP.PAViews_SOURCES, "Sources"); // aw (aE, ck)
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 256, 270); // n (o, ck)Waveform: addNotify
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 256, 270); // n (o, ck)Waveform: addNotify
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 256, 270); // n (o, ck)Waveform: addNotify
+unMaximizeFrame(PAResourceOtoP.PAViews_SOURCES, "Sources"); // aw (aE, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "clock_divider_tb.vhd", 0); // k (j, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_basys3(top_basys3_arch) (top_basys3.vhd)]", 2, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_basys3(top_basys3_arch) (top_basys3.vhd)]", 2, true, false, false, false, false, true); // B (D, ck) - Double Click - Node
+selectCodeEditor("top_basys3.vhd", 184, 279); // ce (w, ck)
+selectCodeEditor("top_basys3.vhd", 291, 263); // ce (w, ck)
+selectCodeEditor("top_basys3.vhd", 291, 263, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("top_basys3.vhd", 315, 328); // ce (w, ck)
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Elapsed time: 56 seconds
+selectCodeEditor("top_basys3.vhd", 222, 229); // ce (w, ck)
+// Elapsed time: 10 seconds
+selectCodeEditor("top_basys3.vhd", 264, 198); // ce (w, ck)
+selectCodeEditor("top_basys3.vhd", 308, 181); // ce (w, ck)
+selectCodeEditor("top_basys3.vhd", 308, 181, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("top_basys3.vhd", 308, 181); // ce (w, ck)
+selectCodeEditor("top_basys3.vhd", 275, 178); // ce (w, ck)
+selectCodeEditor("top_basys3.vhd", 253, 200); // ce (w, ck)
+selectCodeEditor("top_basys3.vhd", 270, 200); // ce (w, ck)
+// Elapsed time: 45 seconds
+selectCodeEditor("top_basys3.vhd", 83, 257); // ce (w, ck)
+selectCodeEditor("top_basys3.vhd", 103, 245); // ce (w, ck)
+// Elapsed time: 74 seconds
+selectCodeEditor("top_basys3.vhd", 231, 278); // ce (w, ck)
+selectCodeEditor("top_basys3.vhd", 115, 239); // ce (w, ck)
+selectCodeEditor("top_basys3.vhd", 69, 262); // ce (w, ck)
+selectCodeEditor("top_basys3.vhd", 58, 276); // ce (w, ck)
+selectCodeEditor("top_basys3.vhd", 79, 237); // ce (w, ck)
+selectCodeEditor("top_basys3.vhd", 136, 208); // ce (w, ck)
+selectCodeEditor("top_basys3.vhd", 95, 108); // ce (w, ck)
+selectCodeEditor("top_basys3.vhd", 35, 144); // ce (w, ck)
+// Elapsed time: 23 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "stoplight_fsm_tb.vhd", 2); // k (j, ck)
+// Elapsed time: 11 seconds
+selectCodeEditor("stoplight_fsm_tb.vhd", 25, 125); // ce (w, ck)
+selectCodeEditor("stoplight_fsm_tb.vhd", 38, 150); // ce (w, ck)
+selectCodeEditor("stoplight_fsm_tb.vhd", 1, 131); // ce (w, ck)
+selectCodeEditor("stoplight_fsm_tb.vhd", 102, 246); // ce (w, ck)
+selectCodeEditor("stoplight_fsm_tb.vhd", 0, 128); // ce (w, ck)
+selectCodeEditor("stoplight_fsm_tb.vhd", 136, 282); // ce (w, ck)
+selectCodeEditor("stoplight_fsm_tb.vhd", 133, 286); // ce (w, ck)
+selectCodeEditor("stoplight_fsm_tb.vhd", 133, 288, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "stoplight_fsm_tb.vhd", 'c'); // ce (w, ck)
+selectCodeEditor("stoplight_fsm_tb.vhd", 262, 352); // ce (w, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "stoplight_fsm.vhd", 3); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Untitled 1*", 4); // k (j, ck)
+// HMemoryUtils.trashcanNow. Engine heap size: 633 MB. GUI used memory: 50 MB. Current time: 3/12/24 5:18:56 PM MDT
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_basys3.vhd", 5); // k (j, ck)
+selectCodeEditor("top_basys3.vhd", 45, 273); // ce (w, ck)
+selectCodeEditor("top_basys3.vhd", 22, 149); // ce (w, ck)
+selectCodeEditor("top_basys3.vhd", 22, 149, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("top_basys3.vhd", 22, 149); // ce (w, ck)
+typeControlKey((HResource) null, "top_basys3.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("top_basys3.vhd", 0, 164); // ce (w, ck)
+selectCodeEditor("top_basys3.vhd", 31, 176); // ce (w, ck)
+selectCodeEditor("top_basys3.vhd", 32, 195); // ce (w, ck)
+selectCodeEditor("top_basys3.vhd", 32, 213); // ce (w, ck)
+selectCodeEditor("top_basys3.vhd", 28, 229); // ce (w, ck)
+selectCodeEditor("top_basys3.vhd", 28, 249); // ce (w, ck)
+selectCodeEditor("top_basys3.vhd", 31, 269); // ce (w, ck)
+// Elapsed time: 10 seconds
+selectCodeEditor("top_basys3.vhd", 0, 299); // ce (w, ck)
+selectCodeEditor("top_basys3.vhd", 130, 373); // ce (w, ck)
+selectCodeEditor("top_basys3.vhd", 216, 347); // ce (w, ck)
+selectCodeEditor("top_basys3.vhd", 160, 296); // ce (w, ck)
+selectCodeEditor("top_basys3.vhd", 135, 285); // ce (w, ck)
+selectCodeEditor("top_basys3.vhd", 141, 349); // ce (w, ck)
+selectCodeEditor("top_basys3.vhd", 242, 352); // ce (w, ck)
+selectCodeEditor("top_basys3.vhd", 169, 380); // ce (w, ck)
+selectCodeEditor("top_basys3.vhd", 184, 322); // ce (w, ck)
+selectCodeEditor("top_basys3.vhd", 25, 251); // ce (w, ck)
+// Elapsed time: 14 seconds
+selectCodeEditor("top_basys3.vhd", 82, 334); // ce (w, ck)
+// Elapsed time: 38 seconds
+selectCodeEditor("top_basys3.vhd", 61, 335); // ce (w, ck)
+// Elapsed time: 99 seconds
+selectCodeEditor("top_basys3.vhd", 38, 336); // ce (w, ck)
+selectCodeEditor("top_basys3.vhd", 38, 336, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("top_basys3.vhd", 38, 336); // ce (w, ck)
+typeControlKey((HResource) null, "top_basys3.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("top_basys3.vhd", 95, 337); // ce (w, ck)
+// Elapsed time: 12 seconds
+selectCodeEditor("top_basys3.vhd", 201, 335); // ce (w, ck)
+selectCodeEditor("top_basys3.vhd", 201, 335, false, false, false, false, true); // ce (w, ck) - Double Click
+// Elapsed time: 13 seconds
+selectCodeEditor("top_basys3.vhd", 187, 179); // ce (w, ck)
+selectCodeEditor("top_basys3.vhd", 94, 351); // ce (w, ck)
+selectCodeEditor("top_basys3.vhd", 76, 285); // ce (w, ck)
+// Elapsed time: 27 seconds
+selectCodeEditor("top_basys3.vhd", 87, 300); // ce (w, ck)
+selectCodeEditor("top_basys3.vhd", 79, 316); // ce (w, ck)
+// Elapsed time: 19 seconds
+selectCodeEditor("top_basys3.vhd", 97, 334); // ce (w, ck)
+// Elapsed time: 26 seconds
+selectCodeEditor("top_basys3.vhd", 131, 276); // ce (w, ck)
+selectCodeEditor("top_basys3.vhd", 126, 306); // ce (w, ck)
+selectCodeEditor("top_basys3.vhd", 203, 321); // ce (w, ck)
+// Elapsed time: 75 seconds
+selectCodeEditor("top_basys3.vhd", 181, 317); // ce (w, ck)
+selectCodeEditor("top_basys3.vhd", 181, 317); // ce (w, ck)
+// Elapsed time: 20 seconds
+selectCodeEditor("top_basys3.vhd", 63, 373); // ce (w, ck)
+selectCodeEditor("top_basys3.vhd", 77, 357); // ce (w, ck)
+selectCodeEditor("top_basys3.vhd", 77, 357); // ce (w, ck)
+selectCodeEditor("top_basys3.vhd", 84, 352); // ce (w, ck)
+selectCodeEditor("top_basys3.vhd", 84, 352, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("top_basys3.vhd", 84, 352); // ce (w, ck)
+selectCodeEditor("top_basys3.vhd", 54, 349); // ce (w, ck)
+selectCodeEditor("top_basys3.vhd", 54, 349, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("top_basys3.vhd", 185, 368); // ce (w, ck)
+typeControlKey((HResource) null, "top_basys3.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("top_basys3.vhd", 111, 386); // ce (w, ck)
+selectCodeEditor("top_basys3.vhd", 74, 344); // ce (w, ck)
+selectCodeEditor("top_basys3.vhd", 62, 369); // ce (w, ck)
+// Elapsed time: 11 seconds
+selectCodeEditor("top_basys3.vhd", 307, 140); // ce (w, ck)
+// Elapsed time: 14 seconds
+selectCodeEditor("top_basys3.vhd", 168, 282); // ce (w, ck)
+selectCodeEditor("top_basys3.vhd", 168, 282, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("top_basys3.vhd", 164, 282); // ce (w, ck)
+selectCodeEditor("top_basys3.vhd", 164, 282); // ce (w, ck)
+selectCodeEditor("top_basys3.vhd", 196, 312); // ce (w, ck)
+selectCodeEditor("top_basys3.vhd", 187, 296); // ce (w, ck)
+selectCodeEditor("top_basys3.vhd", 180, 301); // ce (w, ck)
+// Elapsed time: 14 seconds
+selectCodeEditor("top_basys3.vhd", 175, 318); // ce (w, ck)
+selectCodeEditor("top_basys3.vhd", 160, 319); // ce (w, ck)
+selectCodeEditor("top_basys3.vhd", 167, 320); // ce (w, ck)
+selectCodeEditor("top_basys3.vhd", 101, 300); // ce (w, ck)
+selectCodeEditor("top_basys3.vhd", 103, 305); // ce (w, ck)
+// Elapsed time: 38 seconds
+selectCodeEditor("top_basys3.vhd", 186, 305); // ce (w, ck)
+// Elapsed time: 18 seconds
+selectCodeEditor("top_basys3.vhd", 162, 319); // ce (w, ck)
+// Elapsed time: 19 seconds
+selectCodeEditor("top_basys3.vhd", 164, 326); // ce (w, ck)
+selectCodeEditor("top_basys3.vhd", 157, 318); // ce (w, ck)
+selectCodeEditor("top_basys3.vhd", 103, 331); // ce (w, ck)
+selectCodeEditor("top_basys3.vhd", 192, 339); // ce (w, ck)
+selectCodeEditor("top_basys3.vhd", 151, 339); // ce (w, ck)
+selectCodeEditor("top_basys3.vhd", 151, 339, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("top_basys3.vhd", 151, 339); // ce (w, ck)
+typeControlKey((HResource) null, "top_basys3.vhd", 'c'); // ce (w, ck)
+selectCodeEditor("top_basys3.vhd", 1, 353); // ce (w, ck)
+typeControlKey((HResource) null, "top_basys3.vhd", 'v'); // ce (w, ck)
+typeControlKey((HResource) null, "top_basys3.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("top_basys3.vhd", 79, 349); // ce (w, ck)
+selectCodeEditor("top_basys3.vhd", 79, 365); // ce (w, ck)
+selectCodeEditor("top_basys3.vhd", 159, 352); // ce (w, ck)
+selectCodeEditor("top_basys3.vhd", 159, 366); // ce (w, ck)
+selectCodeEditor("top_basys3.vhd", 190, 366); // ce (w, ck)
+// Elapsed time: 18 seconds
+selectCodeEditor("top_basys3.vhd", 75, 214); // ce (w, ck)
+// Elapsed time: 18 seconds
+selectCodeEditor("top_basys3.vhd", 192, 208); // ce (w, ck)
+selectCodeEditor("top_basys3.vhd", 205, 281); // ce (w, ck)
+selectCodeEditor("top_basys3.vhd", 253, 302); // ce (w, ck)
+selectCodeEditor("top_basys3.vhd", 275, 332); // ce (w, ck)
+// Elapsed time: 13 seconds
+selectCodeEditor("top_basys3.vhd", 175, 454); // ce (w, ck)
+selectCodeEditor("top_basys3.vhd", 193, 452); // ce (w, ck)
+selectCodeEditor("top_basys3.vhd", 184, 430); // ce (w, ck)
+selectCodeEditor("top_basys3.vhd", 171, 455); // ce (w, ck)
+// Elapsed time: 15 seconds
+selectCodeEditor("top_basys3.vhd", 107, 282); // ce (w, ck)
+selectCodeEditor("top_basys3.vhd", 107, 282, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("top_basys3.vhd", 107, 282); // ce (w, ck)
+selectCodeEditor("top_basys3.vhd", 180, 335); // ce (w, ck)
+selectCodeEditor("top_basys3.vhd", 230, 369); // ce (w, ck)
+selectCodeEditor("top_basys3.vhd", 168, 438); // ce (w, ck)
+// Elapsed time: 14 seconds
+selectCodeEditor("top_basys3.vhd", 201, 460); // ce (w, ck)
+selectCodeEditor("top_basys3.vhd", 202, 451); // ce (w, ck)
+selectCodeEditor("top_basys3.vhd", 183, 471); // ce (w, ck)
+// Elapsed time: 26 seconds
+selectCodeEditor("top_basys3.vhd", 178, 434); // ce (w, ck)
+selectCodeEditor("top_basys3.vhd", 172, 465); // ce (w, ck)
+// Elapsed time: 15 seconds
+selectCodeEditor("top_basys3.vhd", 218, 486); // ce (w, ck)
+selectCodeEditor("top_basys3.vhd", 204, 529); // ce (w, ck)
+// Elapsed time: 46 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Syntax Error Files]", 8, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Syntax Error Files]", 8, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Syntax Error Files]", 8, true, false, false, false, false, true); // B (D, ck) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, stoplight_fsm_tb(behavior) (stoplight_fsm_tb.vhd)]", 10, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, stoplight_fsm_tb(behavior) (stoplight_fsm_tb.vhd)]", 10, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, stoplight_fsm_tb(behavior) (stoplight_fsm_tb.vhd)]", 10, true, false, false, false, false, true); // B (D, ck) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, stoplight_fsm_tb(behavior) (stoplight_fsm_tb.vhd), uut : stoplight_fsm(stoplight_fsm_arch) (stoplight_fsm.vhd)]", 11, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, stoplight_fsm_tb(behavior) (stoplight_fsm_tb.vhd), uut : stoplight_fsm(stoplight_fsm_arch) (stoplight_fsm.vhd)]", 11, false, false, false, false, false, true); // B (D, ck) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, clock_divider_tb(test_bench) (clock_divider_tb.vhd)]", 12, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, clock_divider_tb(test_bench) (clock_divider_tb.vhd)]", 12, true, false, false, false, false, true); // B (D, ck) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, top_basys3(top_basys3_arch) (top_basys3.vhd)]", 13, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, top_basys3(top_basys3_arch) (top_basys3.vhd)]", 13, true, false, false, false, false, true); // B (D, ck) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, top_basys3(top_basys3_arch) (top_basys3.vhd), clkdiv_inst : clock_divider(countCompare) (clock_divider.vhd)]", 14, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, top_basys3(top_basys3_arch) (top_basys3.vhd), clkdiv_inst : clock_divider(countCompare) (clock_divider.vhd)]", 14, false, false, false, false, false, true); // B (D, ck) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_basys3(top_basys3_arch) (top_basys3.vhd)]", 2, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_basys3(top_basys3_arch) (top_basys3.vhd)]", 2, true, false, false, false, false, true); // B (D, ck) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, stoplight_fsm(stoplight_fsm_arch) (stoplight_fsm.vhd)]", 3, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, stoplight_fsm(stoplight_fsm_arch) (stoplight_fsm.vhd)]", 3, false, false, false, false, false, true); // B (D, ck) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Syntax Error Files]", 1, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Syntax Error Files]", 1, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0, true, false, false, false, false, true); // B (D, ck) - Double Click - Node
+// Elapsed time: 64 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 1, true); // B (D, ck) - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 1); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, Basys3_Master.xdc]", 3, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, Basys3_Master.xdc]", 3, false, false, false, false, false, true); // B (D, ck) - Double Click
+selectCodeEditor("Basys3_Master.xdc", 8, 112); // ce (w, ck)
+// Elapsed time: 10 seconds
+selectCodeEditor("Basys3_Master.xdc", 8, 94); // ce (w, ck)
+selectCodeEditor("Basys3_Master.xdc", 36, 165); // ce (w, ck)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("Basys3_Master.xdc", 6, 148); // ce (w, ck)
+// Elapsed time: 12 seconds
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+// Elapsed time: 12 seconds
+selectCodeEditor("Basys3_Master.xdc", 7, 195); // ce (w, ck)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// Elapsed time: 34 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Syntax Error Files]", 6, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Syntax Error Files, top_basys3.vhd]", 7, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Syntax Error Files, top_basys3.vhd]", 7, false, false, false, false, false, true); // B (D, ck) - Double Click
+selectCodeEditor("top_basys3.vhd", 629, 357); // ce (w, ck)
+selectCodeEditor("top_basys3.vhd", 629, 357); // ce (w, ck)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// aj (ck): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a (aj)
+// bx (ck):  Save Constraints : addNotify
+// TclEventType: FILE_SET_CHANGE
+// A (ck): No Implementation Results Available: addNotify
+// TclEventType: FILE_SET_CHANGE
+dismissDialog("Save Project"); // aj (ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (ck):  Resetting Runs : addNotify
+// f (ck): Launch Runs: addNotify
+dismissDialog("No Implementation Results Available"); // A (ck)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'cv' command handler elapsed time: 6 seconds
+dismissDialog("Launch Runs"); // f (ck)
+// TclEventType: RUN_LAUNCH
+// bx (ck):  Generate Bitstream : addNotify
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// Tcl Message: [Tue Mar 12 17:35:40 2024] Launched synth_1... Run output will be captured here: C:/Users/Joshua.Janssen/Downloads/ece281-ice4/stoplight.runs/synth_1/runme.log [Tue Mar 12 17:35:40 2024] Launched impl_1... Run output will be captured here: C:/Users/Joshua.Janssen/Downloads/ece281-ice4/stoplight.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bx (ck)
+// TclEventType: RUN_COMPLETED
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 343ms to process. Increasing delay to 2000 ms.
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STEP_COMPLETED
+// ah (ck): Implementation Failed: addNotify
+// Elapsed time: 62 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Implementation Failed"); // ah (ck)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// Elapsed time: 19 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Opt Design, DRC, Netlist, Design Level, [DRC INBB-3] Black Box Instances: Cell 'stoplight_fsm_inst' of type 'stoplight' has undefined contents and is considered a black box.  The contents of this cell must be defined for opt_design to complete successfully.. ]", 7, false); // ah (O, ck)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Opt Design, [Vivado_Tcl 4-78] Error(s) found during DRC. Opt_design not run.. ]", 8, false); // ah (O, ck)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Opt Design, DRC, Netlist, Design Level, [DRC INBB-3] Black Box Instances: Cell 'stoplight_fsm_inst' of type 'stoplight' has undefined contents and is considered a black box.  The contents of this cell must be defined for opt_design to complete successfully.. ]", 7, false); // ah (O, ck)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Opt Design, [Vivado_Tcl 4-78] Error(s) found during DRC. Opt_design not run.. ]", 8, false); // ah (O, ck)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Opt Design, DRC, Netlist, Design Level, [DRC INBB-3] Black Box Instances: Cell 'stoplight_fsm_inst' of type 'stoplight' has undefined contents and is considered a black box.  The contents of this cell must be defined for opt_design to complete successfully.. ]", 7, false); // ah (O, ck)
+// Elapsed time: 12 seconds
+selectCodeEditor("top_basys3.vhd", 259, 278); // ce (w, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "stoplight_fsm.vhd", 3); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_basys3.vhd", 5); // k (j, ck)
+selectCodeEditor("top_basys3.vhd", 116, 182); // ce (w, ck)
+selectCodeEditor("top_basys3.vhd", 188, 194); // ce (w, ck)
+selectCodeEditor("top_basys3.vhd", 184, 236); // ce (w, ck)
+selectCodeEditor("top_basys3.vhd", 199, 234); // ce (w, ck)
+selectCodeEditor("top_basys3.vhd", 221, 268); // ce (w, ck)
+selectCodeEditor("top_basys3.vhd", 209, 366); // ce (w, ck)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Opt Design, [Vivado_Tcl 4-78] Error(s) found during DRC. Opt_design not run.. ]", 8, false); // ah (O, ck)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Opt Design, DRC, Netlist, Design Level]", 6, true); // ah (O, ck) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Design Initialization, [Project 1-486] Could not resolve non-primitive black box cell 'stoplight' instantiated as 'stoplight_fsm_inst' [C:/Users/Joshua.Janssen/Downloads/ece281-ice4/src/hdl/top_basys3.vhd:97]. ]", 2, false); // ah (O, ck)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// aj (ck): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a (aj)
+// bx (ck):  Save Constraints : addNotify
+// TclEventType: DG_GRAPH_STALE
+// A (ck): No Implementation Results Available: addNotify
+dismissDialog("Save Project"); // aj (ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// HOptionPane Warning: 'A background task is running. Please wait until it completes and try again. (Background Task)'
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectButton("OptionPane.button", "OK"); // JButton (A, H)
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (ck):  Resetting Runs : addNotify
+dismissDialog("No Implementation Results Available"); // A (ck)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run impl_1 
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_MODIFY
+// f (ck): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'cv' command handler elapsed time: 9 seconds
+dismissDialog("Launch Runs"); // f (ck)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// Tcl Message: [Tue Mar 12 17:37:55 2024] Launched synth_1... Run output will be captured here: C:/Users/Joshua.Janssen/Downloads/ece281-ice4/stoplight.runs/synth_1/runme.log [Tue Mar 12 17:37:55 2024] Launched impl_1... Run output will be captured here: C:/Users/Joshua.Janssen/Downloads/ece281-ice4/stoplight.runs/impl_1/runme.log 
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STEP_COMPLETED
+// ah (ck): Implementation Failed: addNotify
+// Elapsed time: 60 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Implementation Failed"); // ah (ck)
+// Elapsed time: 41 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Opt Design, DRC, Netlist, Design Level, [DRC INBB-3] Black Box Instances: Cell 'stoplight_inst' of type 'stoplight' has undefined contents and is considered a black box.  The contents of this cell must be defined for opt_design to complete successfully.. ]", 7, false); // ah (O, ck)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Opt Design, [Vivado_Tcl 4-78] Error(s) found during DRC. Opt_design not run.. ]", 8, false); // ah (O, ck)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Opt Design, DRC, Netlist, Design Level, [DRC INBB-3] Black Box Instances: Cell 'stoplight_inst' of type 'stoplight' has undefined contents and is considered a black box.  The contents of this cell must be defined for opt_design to complete successfully.. ]", 7, false); // ah (O, ck)
+// Elapsed time: 15 seconds
+selectCodeEditor("top_basys3.vhd", 25, 219); // ce (w, ck)
+selectCodeEditor("top_basys3.vhd", 53, 233); // ce (w, ck)
+selectCodeEditor("top_basys3.vhd", 53, 249); // ce (w, ck)
+selectCodeEditor("top_basys3.vhd", 53, 260); // ce (w, ck)
+selectCodeEditor("top_basys3.vhd", 52, 280); // ce (w, ck)
+typeControlKey(null, null, 'z');
+selectCodeEditor("top_basys3.vhd", 272, 328); // ce (w, ck)
+selectCodeEditor("top_basys3.vhd", 110, 336); // ce (w, ck)
+selectCodeEditor("top_basys3.vhd", 95, 202); // ce (w, ck)
+selectCodeEditor("top_basys3.vhd", 81, 232); // ce (w, ck)
+selectCodeEditor("top_basys3.vhd", 143, 226); // ce (w, ck)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Opt Design, DRC, Netlist, Design Level, [DRC INBB-3] Black Box Instances: Cell 'stoplight_inst' of type 'stoplight' has undefined contents and is considered a black box.  The contents of this cell must be defined for opt_design to complete successfully.. ]", 7, false); // ah (O, ck)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Opt Design, DRC, Netlist, Design Level, [DRC INBB-3] Black Box Instances: Cell 'stoplight_inst' of type 'stoplight' has undefined contents and is considered a black box.  The contents of this cell must be defined for opt_design to complete successfully.. ]", 7, false); // ah (O, ck)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Opt Design, DRC, Netlist, Design Level, [DRC INBB-3] Black Box Instances: Cell 'stoplight_inst' of type 'stoplight' has undefined contents and is considered a black box.  The contents of this cell must be defined for opt_design to complete successfully.. ]", 7, false, false, false, false, true, false); // ah (O, ck) - Popup Trigger
+selectMenu(PAResourceItoN.MsgTreePanel_MESSAGE_SEVERITY, "Message Severity"); // aa (K, Popup.HeavyWeightWindow)
+// Elapsed time: 49 seconds
+selectCodeEditor("top_basys3.vhd", 197, 405); // ce (w, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "stoplight_fsm.vhd", 3); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Basys3_Master.xdc", 6); // k (j, ck)
+// Elapsed time: 12 seconds
+selectCodeEditor("Basys3_Master.xdc", 16, 80); // ce (w, ck)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Run Implementation]", 17, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// i (ck): Reset and Re-run: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Reset and Re-run"); // a (i)
+// aj (ck): Save Project: addNotify
+dismissDialog("Reset and Re-run"); // i (ck)
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a (aj)
+// TclEventType: FILE_SET_CHANGE
+// bx (ck):  Save Constraints : addNotify
+// A (ck): Synthesis is Out-of-date: addNotify
+// TclEventType: FILE_SET_CHANGE
+dismissDialog("Save Project"); // aj (ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (ck):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A (ck)
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run impl_1 
+// f (ck): Launch Runs: addNotify
+// TclEventType: DG_GRAPH_GENERATED
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// bx (ck):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f (ck)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -jobs 4 
+// Tcl Message: [Tue Mar 12 17:41:46 2024] Launched synth_1... Run output will be captured here: C:/Users/Joshua.Janssen/Downloads/ece281-ice4/stoplight.runs/synth_1/runme.log [Tue Mar 12 17:41:46 2024] Launched impl_1... Run output will be captured here: C:/Users/Joshua.Janssen/Downloads/ece281-ice4/stoplight.runs/impl_1/runme.log 
+// 'c' command handler elapsed time: 9 seconds
+dismissDialog("Starting Design Runs"); // bx (ck)
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STEP_COMPLETED
+// ah (ck): Implementation Failed: addNotify
+// Elapsed time: 54 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Implementation Failed"); // ah (ck)
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // V (q, ck)
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // aa (ck)
+selectMenu(PAResourceItoN.MainMenuMgr_SIMULATION_WAVEFORM, "Simulation Waveform"); // aa (ck)
+selectMenu(PAResourceItoN.MainMenuMgr_CHECKPOINT, "Checkpoint"); // aa (ck)
+selectMenu(PAResourceItoN.MainMenuMgr_IP, "IP"); // aa (ck)
+selectMenu(PAResourceItoN.MainMenuMgr_TEXT_EDITOR, "Text Editor"); // aa (ck)
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // aa (ck)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // V (q, ck)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, Settings]", 1, false); // u (O, ck)
+// Run Command: RDIResourceCommand.RDICommands_SETTINGS
+// Tcl Command: 'rdi::info_commands {device::*}'
+// Tcl Command: 'rdi::info_commands {debug::*}'
+// Tcl Command: 'rdi::info_commands {*}'
+// C (ck): Settings: addNotify
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, Settings]", 1, false); // u (O, ck)
+// Run Command: RDIResourceCommand.RDICommands_SETTINGS
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (C)
+// bx (ck):  Change Settings : addNotify
+dismissDialog("Change Settings"); // bx (ck)
+dismissDialog("Settings"); // C (ck)
+selectCodeEditor("Basys3_Master.xdc", 18, 126); // ce (w, ck)
+selectCodeEditor("Basys3_Master.xdc", 33, 130); // ce (w, ck)
+selectCodeEditor("Basys3_Master.xdc", 106, 168); // ce (w, ck)
+// Elapsed time: 15 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "clock_divider_tb.vhd", 0); // k (j, ck)
+// [GUI Memory]: 195 MB (+5033kb) [06:57:25]
+// [Engine Memory]: 647 MB (+8100kb) [06:57:30]
+// [GUI Memory]: 206 MB (+2052kb) [06:57:50]
+// [GUI Memory]: 217 MB (+144kb) [06:58:46]
+// HMemoryUtils.trashcanNow. Engine heap size: 666 MB. GUI used memory: 70 MB. Current time: 3/12/24 5:44:58 PM MDT

@@ -1,0 +1,52 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Tue Mar 12 17:42:24 2024
+# Process ID: 25460
+# Current directory: C:/Users/Joshua.Janssen/Downloads/ece281-ice4/stoplight.runs/impl_1
+# Command line: vivado.exe -log top_basys3.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source top_basys3.tcl -notrace
+# Log file: C:/Users/Joshua.Janssen/Downloads/ece281-ice4/stoplight.runs/impl_1/top_basys3.vdi
+# Journal file: C:/Users/Joshua.Janssen/Downloads/ece281-ice4/stoplight.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source top_basys3.tcl -notrace
+Command: link_design -top top_basys3 -part xc7a35tcpg236-1
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Netlist 29-17] Analyzing 3 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.2
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/Joshua.Janssen/Downloads/ece281-ice4/src/hdl/Basys3_Master.xdc]
+CRITICAL WARNING: [Designutils 20-1307] Command 'Sch' is not supported in the xdc constraint file. [C:/Users/Joshua.Janssen/Downloads/ece281-ice4/src/hdl/Basys3_Master.xdc:125]
+CRITICAL WARNING: [Designutils 20-1307] Command 'Sch' is not supported in the xdc constraint file. [C:/Users/Joshua.Janssen/Downloads/ece281-ice4/src/hdl/Basys3_Master.xdc:128]
+CRITICAL WARNING: [Designutils 20-1307] Command 'Sch' is not supported in the xdc constraint file. [C:/Users/Joshua.Janssen/Downloads/ece281-ice4/src/hdl/Basys3_Master.xdc:131]
+Finished Parsing XDC File [C:/Users/Joshua.Janssen/Downloads/ece281-ice4/src/hdl/Basys3_Master.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+CRITICAL WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'stoplight' instantiated as 'stoplight_inst' [C:/Users/Joshua.Janssen/Downloads/ece281-ice4/src/hdl/top_basys3.vhd:97]
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+7 Infos, 0 Warnings, 4 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 551.664 ; gain = 317.227
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35t'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+ERROR: [DRC INBB-3] Black Box Instances: Cell 'stoplight_inst' of type 'stoplight' has undefined contents and is considered a black box.  The contents of this cell must be defined for opt_design to complete successfully.
+INFO: [Project 1-461] DRC finished with 1 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+ERROR: [Vivado_Tcl 4-78] Error(s) found during DRC. Opt_design not run.
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.108 . Memory (MB): peak = 553.707 ; gain = 2.043
+INFO: [Common 17-83] Releasing license: Implementation
+12 Infos, 0 Warnings, 4 Critical Warnings and 2 Errors encountered.
+opt_design failed
+ERROR: [Common 17-39] 'opt_design' failed due to earlier errors.
+
+INFO: [Common 17-206] Exiting Vivado at Tue Mar 12 17:42:35 2024...
